@@ -69,26 +69,19 @@ The goal is a tool that doesn't just say "risky" but shows its work — so a use
 | Safe message correctly passed | `screenshots/04_safe_result.png` |
 | Final polished UI | `screenshots/05_final.png` |
 
-```markdown
-![Early UI](screenshots/01_early_ui.png)
-![Scam flagged](screenshots/03_scam_result.png)
-![Safe message passed](screenshots/04_safe_result.png)
-```
 
 ## Tech Stack
 
-**All tools below are free and open-source — no paid APIs or services are used anywhere in this project.**
+All tools below are free and open-source — no paid APIs or services are used anywhere in this project.
 
 | Layer | Tool/Library | Purpose |
 |---|---|---|
-| Language / runtime  | Core application logic |
-| NLP / detection | | Risk scoring, phrase flagging |
-| Backend / API |  | Serves the `/analyze` endpoint |
-| Frontend |  | Paste-message UI, results display |
+| Language / runtime | Python 3 | Core application logic |
+| NLP / detection | sentence-transformers (paraphrase-multilingual-MiniLM-L12-v2) + rule-based signals | Risk scoring, phrase flagging |
+| Backend / API | FastAPI + Uvicorn | Serves the `/analyze` endpoint |
+| Frontend | React + Vite | Paste-message UI, results display |
 | Data format | JSON (`data/seed_dataset.json`) | Seed dataset of scam/misinformation/safe examples |
 | Version control | Git + GitHub | Source control, team collaboration |
-
-*(Update this table the moment a library choice is finalized — don't wait until the end of the day.)*
 
 ## Project Structure
 
@@ -104,8 +97,6 @@ OpenHack26/
 ├── [backend folder]/           #  app.py, /api
 └── [frontend folder]/          #  /frontend, index.html
 ```
-
-*(Update this tree to match what actually exists in the repo — run `ls -R` or check VS Code's file explorer and adjust.)*
 
 ## Setup & Run Instructions
 
