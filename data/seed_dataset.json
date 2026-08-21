@@ -1,0 +1,973 @@
+{
+  "meta": {
+    "project": "Meiyaa",
+    "description": "Seed dataset of Tamil-English code-mixed scam/misinformation message patterns and safe control messages for the Meiyaa detector.",
+    "total_messages": 75,
+    "categories": [
+      "Health Misinformation",
+      "Job Scam",
+      "Legitimate",
+      "Loan Scam",
+      "Lottery Scam",
+      "OTP Phishing"
+    ],
+    "labels": [
+      "misinformation",
+      "not_scam",
+      "scam"
+    ],
+    "languages": [
+      "English",
+      "Tamil",
+      "Tanglish"
+    ],
+    "license_note": "Reconstructed representative examples based on publicly reported scam/misinformation patterns (news reports, CERT-In/RBI advisories, fact-checking orgs). Not verbatim copies of any individual's private messages."
+  },
+  "messages": [
+    {
+      "id": 1,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Congratulations! You are shortlisted for Part Time Work From Home Job. Daily earn Rs.3000-5000. No experience needed. Registration fee Rs.499 only. WhatsApp HR now: +91-9xxxxxxxxx",
+      "red_flags": [
+        "unsolicited offer",
+        "upfront registration fee",
+        "unrealistic daily pay",
+        "pressure to move to WhatsApp"
+      ],
+      "source_pattern_note": "Pattern based on widely reported WFH job-scam template (LocalCircles 2025 survey; task-based job scams)"
+    },
+    {
+      "id": 2,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Vanakkam sir/madam, ungalukku Amazon company la Part Time Online Job kedaikum. Daily 2 hours work pannina 1500 rupees kudupom. Interested na intha number ku WhatsApp pannunga. Registration fee 300 rs mattum.",
+      "red_flags": [
+        "impersonates known brand (Amazon)",
+        "upfront fee",
+        "unverified WhatsApp registration"
+      ],
+      "source_pattern_note": "Pattern based on reported HR-impersonation task job scams"
+    },
+    {
+      "id": 3,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "வணக்கம்! உங்களுக்கு Flipkart நிறுவனத்தில் Work From Home வேலை உறுதி செய்யப்பட்டுள்ளது. நாள் ஒன்றுக்கு ரூ.2000 சம்பாதிக்கலாம். சேர விவரங்களுக்கு இந்த எண்ணுக்கு WhatsApp செய்யவும். பதிவு கட்டணம் ரூ.499 மட்டும்.",
+      "red_flags": [
+        "brand impersonation",
+        "guaranteed income claim",
+        "advance fee before any real interview"
+      ],
+      "source_pattern_note": "Pattern based on e-commerce HR impersonation scams reported in Bengaluru freelance-gig cases"
+    },
+    {
+      "id": 4,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "HR Team here. You've been selected for Data Entry job, salary 25000/month. Send Aadhaar card copy and pay Rs.999 refundable security deposit to activate your employee ID.",
+      "red_flags": [
+        "asks for Aadhaar upfront",
+        "refundable deposit trick",
+        "no interview process"
+      ],
+      "source_pattern_note": "Pattern based on data-entry/task job fraud reports"
+    },
+    {
+      "id": 5,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Hi bro, naan Swiggy la HR. Ungaluku part time delivery partner job iruku, daily 1200-1800 sambadhikalam. Kit fee 800 rs pay pannunga, adhuku bank la refund aagum.",
+      "red_flags": [
+        "brand impersonation (Swiggy)",
+        "kit/security fee scam",
+        "false refund promise"
+      ],
+      "source_pattern_note": "Pattern based on gig-economy delivery partner fraud"
+    },
+    {
+      "id": 6,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "You have been shortlisted for an online task-based job. Complete simple app-rating tasks and earn commission. Join our Telegram group for task assignments and initial investment guidance.",
+      "red_flags": [
+        "task-based investment escalation",
+        "moves to Telegram",
+        "'invest to earn more' trap"
+      ],
+      "source_pattern_note": "Pattern based on task-scam/'e-commerce rating job' fraud (₹1.2 lakh Bengaluru case reported)"
+    },
+    {
+      "id": 7,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "உங்கள் Resume Naukri.com மூலம் தேர்வு செய்யப்பட்டது. Interview இல்லாமல் நேரடியாக Offer Letter வழங்கப்படும். Processing charge ரூ.1500 UPI மூலம் அனுப்பவும்.",
+      "red_flags": [
+        "no interview but instant offer",
+        "processing charge via UPI",
+        "portal impersonation"
+      ],
+      "source_pattern_note": "Pattern based on portal-impersonation job offer scams"
+    },
+    {
+      "id": 8,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Google is hiring freshers for remote content moderator role. Salary 40k/month. To secure your slot pay one time training fee of Rs.1200. Limited seats only, apply today.",
+      "red_flags": [
+        "impersonates major company (Google)",
+        "urgency/limited seats",
+        "training fee"
+      ],
+      "source_pattern_note": "Pattern based on major-brand-impersonation remote job scams"
+    },
+    {
+      "id": 9,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Instant Personal Loan Approved! Get up to Rs.5,00,000 with NO CIBIL check, NO documents. Disbursal within 30 minutes. Pay processing fee Rs.799 to release loan amount.",
+      "red_flags": [
+        "no CIBIL/document check claim (illegitimate)",
+        "advance processing fee",
+        "instant disbursal promise"
+      ],
+      "source_pattern_note": "Pattern based on RBI/CERT-In advisories on fake loan apps and Billcut-reported case (Aftab, Bareilly)"
+    },
+    {
+      "id": 10,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Sir unga mobile number la 2 lakhs loan pre-approved aayiruku. Zero interest first month. Aadhaar, PAN photo anuppi 500 rs processing fee pannunga, aprm loan amount account ku varum.",
+      "red_flags": [
+        "pre-approved without application",
+        "ID documents requested over chat",
+        "advance fee"
+      ],
+      "source_pattern_note": "Pattern based on fake loan-app/WhatsApp loan fraud reports"
+    },
+    {
+      "id": 11,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "வாழ்த்துக்கள்! உங்களுக்கு ரூ.1,00,000 Personal Loan எந்த ஆவணமும் இல்லாமல் அங்கீகரிக்கப்பட்டது. Loan வழங்க செயலாக்க கட்டணம் ரூ.999 UPI மூலம் அனுப்பவும்.",
+      "red_flags": [
+        "no-document loan claim",
+        "advance UPI payment demand",
+        "unsolicited approval message"
+      ],
+      "source_pattern_note": "Pattern based on WhatsApp loan-scam advisories (RBL Bank, CERT-In)"
+    },
+    {
+      "id": 12,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Dear Customer, your loan application with XYZ Finance is approved for Rs.3,00,000. To avoid cancellation, share your Aadhaar, PAN and bank OTP for final verification within 1 hour.",
+      "red_flags": [
+        "urgency/deadline pressure",
+        "requests OTP (real lenders never do)",
+        "vague company name"
+      ],
+      "source_pattern_note": "Pattern based on OTP-linked fake loan approval fraud (CERT-In advisory)"
+    },
+    {
+      "id": 13,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Nanba, unga CIBIL score kammiya irundhalum problem illa. Naan agent, 50000 loan arrange pannuren, ஆனா முதல்ல 799 registration kattanum. Trust பண்ணுங்க, bank employee than.",
+      "red_flags": [
+        "self-styled 'agent' bypassing bank process",
+        "advance registration fee",
+        "false trust appeal"
+      ],
+      "source_pattern_note": "Pattern based on informal loan-agent WhatsApp fraud"
+    },
+    {
+      "id": 14,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Congratulations! Your loan of Rs 2 lakh has been sanctioned by our NBFC partner. Download this APK to check status and complete e-KYC: bit.ly/loan-status-check",
+      "red_flags": [
+        "prompts APK download outside app stores",
+        "shortened suspicious link",
+        "fake e-KYC"
+      ],
+      "source_pattern_note": "Pattern based on fake loan-app malware distribution reported by CERT-In/McAfee"
+    },
+    {
+      "id": 15,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Your bank account will be blocked today due to KYC non-compliance. Share the OTP sent to your number immediately to keep your account active. Call 1800-XXX-XXXX now.",
+      "red_flags": [
+        "urgency/fear (account block)",
+        "requests OTP directly",
+        "fake customer care number"
+      ],
+      "source_pattern_note": "Pattern based on CERT-In KYC/OTP phishing advisory (ICICI Bank KYC WhatsApp case, Pune CA, March 2025)"
+    },
+    {
+      "id": 16,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Hi, naan unga cousin Ravi. Emergency, oru payment panna OTP varum, adha enakku sollunga please, urgent.",
+      "red_flags": [
+        "impersonates known contact",
+        "urgent emotional appeal",
+        "OTP request via message"
+      ],
+      "source_pattern_note": "Pattern based on 'hacked friend/relative OTP' scam reported widely (Bengaluru case)"
+    },
+    {
+      "id": 17,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "உங்கள் Paytm KYC காலாவதியாகிறது. இன்று மாலைக்குள் புதுப்பிக்கவில்லை எனில் கணக்கு முடக்கப்படும். இந்த லிங்கை கிளிக் செய்து OTP உள்ளிடவும்: bit.ly/paytm-kyc-update",
+      "red_flags": [
+        "fake deadline",
+        "phishing link mimicking Paytm",
+        "requests OTP entry on fake page"
+      ],
+      "source_pattern_note": "Pattern based on widely reported Paytm/UPI KYC phishing SMS"
+    },
+    {
+      "id": 18,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "We noticed an unauthorized login attempt on your account. To secure your account, please reply with the 6-digit OTP you just received.",
+      "red_flags": [
+        "false security alert",
+        "requests OTP via reply",
+        "no legitimate service asks this"
+      ],
+      "source_pattern_note": "Pattern based on account-takeover OTP phishing (CERT-In advisory)"
+    },
+    {
+      "id": 19,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Customer Care here. Neenga refund ku apply pannirukinga, adha process panna oru OTP varum, adha sollunga, transaction reverse aagum.",
+      "red_flags": [
+        "poses as customer care",
+        "fake refund pretext",
+        "requests OTP for 'reversal'"
+      ],
+      "source_pattern_note": "Pattern based on fake-refund OTP scam (Ahmedabad case reported, ₹40,000 loss)"
+    },
+    {
+      "id": 20,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Your parcel could not be delivered due to incomplete address. Verify by entering the OTP sent to you or your order will be cancelled and refund forfeited.",
+      "red_flags": [
+        "courier/delivery pretext",
+        "OTP verification demand",
+        "loss-aversion pressure"
+      ],
+      "source_pattern_note": "Pattern based on courier/e-commerce delivery OTP scam (CERT-In list of common OTP frauds)"
+    },
+    {
+      "id": 21,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "வங்கி எச்சரிக்கை: உங்கள் கணக்கில் சந்தேகத்திற்குரிய பரிவர்த்தனை கண்டறியப்பட்டது. ரத்து செய்ய இந்த எண்ணிற்கு அழைத்து OTP ஐ உறுதிப்படுத்தவும்.",
+      "red_flags": [
+        "fake fraud alert",
+        "call-back number is scammer's",
+        "OTP confirmation request"
+      ],
+      "source_pattern_note": "Pattern based on fake bank fraud-alert OTP scam"
+    },
+    {
+      "id": 22,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Your electricity bill is unpaid and power will be disconnected tonight. Pay immediately via this link and enter OTP to confirm: electricity-billpay-secure.info",
+      "red_flags": [
+        "utility disconnection threat",
+        "phishing domain",
+        "OTP entry on fake site"
+      ],
+      "source_pattern_note": "Pattern based on electricity bill / utility disconnection SMS scams (CERT-In advisories)"
+    },
+    {
+      "id": 23,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "English",
+      "message_text": "URGENT ALERT: Avoid eating papaya and non-veg for next 10 days, WHO confirms it worsens dengue fever. Doctors advised to drink only goat milk. Forward to save lives!",
+      "red_flags": [
+        "false WHO attribution",
+        "unverified miracle-cure claim",
+        "forward-for-good pressure tactic"
+      ],
+      "source_pattern_note": "Pattern based on documented dengue-related WhatsApp health hoaxes (BOOM fact-check report)"
+    },
+    {
+      "id": 24,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tanglish",
+      "message_text": "Nalla news!! Papaya leaf juice 48 mani neram la dengue fever ah completely cure pannidum nu doctors sonnanga. Free ah kedaikum, ella hospital layum available. Ellarukum share pannunga.",
+      "red_flags": [
+        "unverified 'doctors say' claim",
+        "false 48-hour cure timeframe",
+        "urges mass forwarding"
+      ],
+      "source_pattern_note": "Pattern based on papaya-leaf-cures-dengue hoax (BOOM/Check4Spam documented forward)"
+    },
+    {
+      "id": 25,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tamil",
+      "message_text": "எச்சரிக்கை! இந்த மாத்திரையில் 'மச்சுபோ' வைரஸ் உள்ளது என மருத்துவர்கள் தெரிவித்துள்ளனர். இதை உடனே பயன்படுத்துவதை நிறுத்தி, அனைவருக்கும் இதை பகிரவும்.",
+      "red_flags": [
+        "fabricated virus name",
+        "unnamed 'doctors'",
+        "urges viral sharing without source"
+      ],
+      "source_pattern_note": "Pattern based on documented 'Machupo virus in painkillers' WhatsApp hoax (NPR/Check4Spam)"
+    },
+    {
+      "id": 26,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "English",
+      "message_text": "Breaking: New study proves drinking hot water with lemon every morning cures diabetes permanently without medicine. Stop your tablets and try this for 7 days, share with diabetic friends.",
+      "red_flags": [
+        "advises stopping prescribed medication (dangerous)",
+        "fake 'study'",
+        "no source cited"
+      ],
+      "source_pattern_note": "Pattern based on documented diabetes home-remedy hoaxes (BOOM report on wheat/barley diabetes myths)"
+    },
+    {
+      "id": 27,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tanglish",
+      "message_text": "Coconut oil daily 2 spoon sappitta dengue platelet count seekirama uyarum nu top hospital doctors confirm pannirukanga. Chemical medicine venaam, ithu mattum podhum.",
+      "red_flags": [
+        "false medical claim discouraging real treatment",
+        "vague 'top hospital doctors'",
+        "unsourced"
+      ],
+      "source_pattern_note": "Pattern based on coconut-oil-cures-dengue hoax (BOOM fact-check compilation)"
+    },
+    {
+      "id": 28,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tamil",
+      "message_text": "பசுவின் பாலில் பாம்பு விஷம் கலந்திருப்பதாக சந்தேகிக்கப்படும் நிகழ்வு அறிக்கை வெளியானது. பால் குடிப்பதை தற்காலிகமாக நிறுத்தி வையுங்கள். இதை உடனே அனைவருக்கும் அனுப்புங்கள்.",
+      "red_flags": [
+        "classic recycled hoax (snake-in-milk)",
+        "no verifiable source",
+        "urges rapid mass forwarding"
+      ],
+      "source_pattern_note": "Pattern based on long-documented 'snake venom in milk' hoax (Check4Spam/NPR reported)"
+    },
+    {
+      "id": 29,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "English",
+      "message_text": "Alert from UNICEF: Avoid cold drinks and ice cream for next 3 days, a new virus spreads through cold food items. Government has not announced this to avoid panic, please forward to protect family.",
+      "red_flags": [
+        "false attribution to UNICEF",
+        "conspiracy framing ('govt hiding it')",
+        "no verifiable source"
+      ],
+      "source_pattern_note": "Pattern based on documented fake-UNICEF coronavirus advisory hoax cited in Senate letter to Facebook/WhatsApp"
+    },
+    {
+      "id": 30,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tanglish",
+      "message_text": "Bitter gourd (pavakkai) juice daily kudichaa corona virus 100% kill aagum nu ஒரு government doctor sonnanga interview la. Idha ellarukkum share pannunga, life save pannunga.",
+      "red_flags": [
+        "false COVID cure claim",
+        "unverifiable 'government doctor'",
+        "forward-to-save-lives pressure"
+      ],
+      "source_pattern_note": "Pattern based on documented bitter-gourd-cures-coronavirus hoax (cited in US Senate letter re: WhatsApp misinformation)"
+    },
+    {
+      "id": 31,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "CONGRATULATIONS! Your mobile number has won Rs.25,00,000 in the KBC Lucky Draw 2026. To claim your prize, pay Rs.5,000 registration/tax fee. Contact Mr. Sharma: +91-7xxxxxxxxx",
+      "red_flags": [
+        "won a lottery never entered",
+        "celebrity-show impersonation (KBC)",
+        "upfront tax/fee demand"
+      ],
+      "source_pattern_note": "Pattern based on widely reported KBC lottery scam template"
+    },
+    {
+      "id": 32,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Vanakkam! Ungaluku Coca-Cola company Lucky Draw la 10,00,000 rupees prize adichirukku. Vாங்க இந்த prize-a claim panna 5000 rs processing fee anuppunga.",
+      "red_flags": [
+        "brand impersonation (Coca-Cola)",
+        "unsolicited prize win",
+        "advance fee to 'claim'"
+      ],
+      "source_pattern_note": "Pattern based on documented Coca-Cola lucky-draw scam template (bighow news)"
+    },
+    {
+      "id": 33,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "வாழ்த்துக்கள்! உங்கள் எண் Airtel நிறுவனத்தின் 25வது ஆண்டு நிறைவு லக்கி டிரா-வில் ரூ.15,00,000 வென்றுள்ளது. பரிசு பெற ரூ.3,000 GST கட்டணம் செலுத்தவும்.",
+      "red_flags": [
+        "telecom brand impersonation",
+        "fake 'GST fee' to release prize",
+        "unsolicited win notice"
+      ],
+      "source_pattern_note": "Pattern based on telecom-anniversary lucky draw scam template"
+    },
+    {
+      "id": 34,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "You have been selected for a WhatsApp Lucky Winner Prize of an iPhone 16 Pro. Claim now by clicking the link and sharing this message with 5 groups to unlock your gift.",
+      "red_flags": [
+        "fake product giveaway",
+        "forward-to-unlock trick used for virality/data harvesting",
+        "suspicious link"
+      ],
+      "source_pattern_note": "Pattern based on documented WhatsApp Gold/fake giveaway forward scam"
+    },
+    {
+      "id": 35,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Sir, neenga ungal number vachu free ah Royal Enfield bike win pannirukinga oru online survey mூலம். Delivery charge 1500 rs pay panna bike unga veetuku varum.",
+      "red_flags": [
+        "unsolicited 'won a bike' claim",
+        "delivery/courier fee scam",
+        "no verifiable survey"
+      ],
+      "source_pattern_note": "Pattern based on fake vehicle-giveaway courier-fee scam pattern"
+    },
+    {
+      "id": 36,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "English",
+      "message_text": "Your OTP for HDFC Bank net banking login is 482913. Valid for 10 minutes. Do not share this OTP with anyone, including bank staff.",
+      "red_flags": [
+        "none - this is a genuine transactional OTP message that explicitly warns not to share it"
+      ],
+      "source_pattern_note": "Example of genuine bank-format OTP message for contrast/negative class"
+    },
+    {
+      "id": 37,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tanglish",
+      "message_text": "Anna, naalaikku meeting 10 mani ku office la, konjam late aagalam nu sonnanga boss. Reminder anupparen.",
+      "red_flags": [
+        "none - ordinary personal/work conversation"
+      ],
+      "source_pattern_note": "Everyday Tanglish message for negative class balance"
+    },
+    {
+      "id": 38,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tamil",
+      "message_text": "அம்மா, நாளைக்கு டாக்டர் அப்பாயின்ட்மென்ட் மதியம் 3 மணிக்கு உள்ளது. மறக்காமல் வாங்க.",
+      "red_flags": [
+        "none - ordinary family reminder message"
+      ],
+      "source_pattern_note": "Everyday Tamil message for negative class balance"
+    },
+    {
+      "id": 39,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "English",
+      "message_text": "Your Swiggy order #4521 has been delivered. Rate your delivery experience in the app. Thank you for ordering with us!",
+      "red_flags": [
+        "none - standard post-delivery notification, no request for money/OTP/personal data"
+      ],
+      "source_pattern_note": "Example of legitimate e-commerce notification for negative class"
+    },
+    {
+      "id": 40,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tanglish",
+      "message_text": "Da, indha weekend ooru poi varalam nu irukken, ticket book pannitiya? Confirm pannu.",
+      "red_flags": [
+        "none - casual personal plan conversation"
+      ],
+      "source_pattern_note": "Everyday Tanglish message for negative class balance"
+    },
+    {
+      "id": 41,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "English",
+      "message_text": "Reminder: Your electricity bill of Rs.1,240 for connection no. 1023456 is due on 28th. Pay via the official TANGEDCO app or website to avoid late fee.",
+      "red_flags": [
+        "none - directs to official app/website rather than a link/OTP, no urgency threats"
+      ],
+      "source_pattern_note": "Example of genuine utility bill reminder for negative class contrast"
+    },
+    {
+      "id": 42,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tamil",
+      "message_text": "பள்ளி நாளை விடுமுறை என அறிவிக்கப்படுகிறது. மாணவர்கள் திங்கட்கிழமை வழக்கம்போல் வரவும்.",
+      "red_flags": [
+        "none - genuine school announcement"
+      ],
+      "source_pattern_note": "Everyday Tamil announcement for negative class balance"
+    },
+    {
+      "id": 43,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "We are hiring Typists for Home Based Typing Job. No target, no fear. Earn Rs.20-25 per page. Kit and ID card charge Rs.850 (fully refundable after 1 month).",
+      "red_flags": [
+        "typing/copy-paste job template",
+        "refundable kit fee that is never refunded",
+        "vague employer name"
+      ],
+      "source_pattern_note": "Pattern based on classic home-based typing job scam circulated via SMS/WhatsApp for years"
+    },
+    {
+      "id": 44,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Hi, Zomato la delivery boy vacancy iruku, license venaam, bike venaam, company than bike kudukum. Registration ku 650 rs pay pannunga, bike 2 naala home delivery aagum.",
+      "red_flags": [
+        "brand impersonation (Zomato)",
+        "company providing free bike is implausible",
+        "advance fee"
+      ],
+      "source_pattern_note": "Pattern based on delivery-partner recruitment fraud"
+    },
+    {
+      "id": 45,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Earn Rs.50,000/month by liking YouTube videos and subscribing to channels. Simple task, no skills required. Message us to get your task ID and starter kit fee of Rs.300.",
+      "red_flags": [
+        "unrealistic pay for trivial task",
+        "'starter kit fee'",
+        "classic social-media task scam"
+      ],
+      "source_pattern_note": "Pattern based on 'like and earn' task-scam template widely reported by cyber cells"
+    },
+    {
+      "id": 46,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "TCS நிறுவனத்தில் Work From Home வாய்ப்பு! எந்த தகுதியும் தேவையில்லை. மாதம் ரூ.35,000 உறுதி. விவரங்களுக்கு இந்த வாட்ஸ்அப் குழுவில் இணையவும், நுழைவு கட்டணம் ரூ.599.",
+      "red_flags": [
+        "impersonates known IT company (TCS)",
+        "no qualification needed for high salary (red flag)",
+        "WhatsApp group entry fee"
+      ],
+      "source_pattern_note": "Pattern based on IT-major impersonation WFH scam"
+    },
+    {
+      "id": 47,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Airlines cabin crew hiring drive - work abroad, salary in USD. Send passport copy and pay Rs.2000 visa processing assistance fee to HR WhatsApp number to proceed.",
+      "red_flags": [
+        "overseas job with upfront visa fee",
+        "requests passport copy over WhatsApp",
+        "no official recruiter link"
+      ],
+      "source_pattern_note": "Pattern based on overseas job/visa-fee recruitment fraud reported by MEA advisories"
+    },
+    {
+      "id": 48,
+      "category": "Job Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Naanga oru MNC company, freshers ku data entry job kudukurom, work from home, laptop venaam mobile la pannalam. First month training fee 450 rs mattum, apram salary start aagum.",
+      "red_flags": [
+        "vague 'MNC' with no name",
+        "training fee before any salary",
+        "mobile-only claim to lower barrier"
+      ],
+      "source_pattern_note": "Pattern based on vague-employer data entry scam"
+    },
+    {
+      "id": 49,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Pre-approved Business Loan of Rs.10,00,000 available for you at 2% interest only. No collateral, no guarantor. Reply YES to get funds credited within 24 hours after Rs.1500 verification charge.",
+      "red_flags": [
+        "unrealistically low interest",
+        "no collateral for large sum",
+        "verification charge before disbursal"
+      ],
+      "source_pattern_note": "Pattern based on fake business-loan WhatsApp fraud"
+    },
+    {
+      "id": 50,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Bro unga salary account paatha loan easy ah sanction aagum nu bank agent sonnanga. Aana munnadi oru 'insurance charge' 1200 rs kattanum, apram loan full ah release aagum.",
+      "red_flags": [
+        "self-styled bank agent",
+        "invented 'insurance charge'",
+        "advance payment before disbursal"
+      ],
+      "source_pattern_note": "Pattern based on fake bank-agent WhatsApp loan fraud"
+    },
+    {
+      "id": 51,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "உங்கள் Aadhaar எண் அடிப்படையில் ரூ.50,000 Instant Loan அங்கீகரிக்கப்பட்டுள்ளது. இந்த APK-ஐ பதிவிறக்கம் செய்து e-KYC முடிக்கவும்: bit.ly/instant-loan-kyc",
+      "red_flags": [
+        "Aadhaar-based pre-approval without application",
+        "APK download outside app store",
+        "suspicious short link"
+      ],
+      "source_pattern_note": "Pattern based on fake loan-app APK malware distribution (CERT-In/McAfee advisories)"
+    },
+    {
+      "id": 52,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Student Education Loan Scheme - Govt subsidized, 0% interest for first year. Apply now by paying Rs.999 application fee, funds disbursed directly to college within 48 hours.",
+      "red_flags": [
+        "fake government scheme claim",
+        "application fee for a 'subsidized' loan (real govt schemes don't charge this)",
+        "urgency"
+      ],
+      "source_pattern_note": "Pattern based on fake government education-loan scheme scam"
+    },
+    {
+      "id": 53,
+      "category": "Loan Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Madam, unga husband name la already 1 lakh loan approve aagiruku, ஆனா withdraw panna Aadhaar OTP verify pannanum, sollunga naan process pannitren.",
+      "red_flags": [
+        "third-party requesting OTP on someone else's behalf",
+        "social engineering via family member"
+      ],
+      "source_pattern_note": "Pattern based on family-impersonation OTP loan fraud"
+    },
+    {
+      "id": 54,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "SBI ALERT: Your account is temporarily suspended due to PAN-Aadhaar link pending. Update immediately by sharing OTP or visit nearest ATM within 2 hours to avoid permanent block.",
+      "red_flags": [
+        "bank brand impersonation",
+        "fake suspension threat",
+        "OTP request with false urgency"
+      ],
+      "source_pattern_note": "Pattern based on SBI/bank-impersonation PAN-Aadhaar linking phishing SMS"
+    },
+    {
+      "id": 55,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Naan Flipkart delivery agent, unga order return panna oru OTP varum apo, adha sollunga confirm pannitu return pickup pannuren.",
+      "red_flags": [
+        "delivery-agent impersonation",
+        "requests OTP under 'return pickup' pretext"
+      ],
+      "source_pattern_note": "Pattern based on e-commerce return/delivery OTP scam"
+    },
+    {
+      "id": 56,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "உங்கள் Jio சிம் இன்று இரவு முடக்கப்படும் ஏனெனில் KYC நிலுவையில் உள்ளது. இந்த எண்ணை அழைத்து OTP கூறி மறு சரிபார்ப்பு செய்யவும்: 1800-XXX-XXXX",
+      "red_flags": [
+        "telecom brand impersonation",
+        "SIM deactivation threat",
+        "OTP over call to fake helpline"
+      ],
+      "source_pattern_note": "Pattern based on telecom SIM-block KYC OTP phishing scam widely reported by TRAI advisories"
+    },
+    {
+      "id": 57,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Your credit card reward points worth Rs.8,500 are expiring today. Redeem now by verifying with the OTP sent to your registered mobile number.",
+      "red_flags": [
+        "fake expiring rewards to create urgency",
+        "OTP verification request for 'redemption'"
+      ],
+      "source_pattern_note": "Pattern based on credit-card rewards-expiry OTP scam"
+    },
+    {
+      "id": 58,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Hi sir, IT department here, unga income tax refund 12,400 rs pending. Process panna oru OTP varum, athai confirm pannunga refund credit aagum.",
+      "red_flags": [
+        "impersonates government tax department",
+        "refund pretext for OTP",
+        "no official IT dept channel uses SMS/WhatsApp OTP requests"
+      ],
+      "source_pattern_note": "Pattern based on Income Tax refund scam SMS/WhatsApp (McAfee India advisory)"
+    },
+    {
+      "id": 59,
+      "category": "OTP Phishing",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Your WhatsApp account will be deactivated in 24 hours due to a policy violation. To keep your account active, share the verification code you just received with support.",
+      "red_flags": [
+        "fake WhatsApp policy violation",
+        "requests verification/OTP code (leads to account takeover)"
+      ],
+      "source_pattern_note": "Pattern based on WhatsApp account-hijack OTP scam (moneylife.in reported case)"
+    },
+    {
+      "id": 60,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "English",
+      "message_text": "Doctors warn: Do not take Combiflam tablets, they contain a banned chemical causing sudden death. Several deaths reported this week. Share this to save someone's life today.",
+      "red_flags": [
+        "fabricated medical danger claim about a common medicine",
+        "no named source or hospital",
+        "urges forwarding"
+      ],
+      "source_pattern_note": "Pattern based on documented Combiflam-danger hoax (BOOM fact-check compilation)"
+    },
+    {
+      "id": 61,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tanglish",
+      "message_text": "5G towers vந்தததுல தான் இப்போ corona cases athigama aagudhu nu scientists sonnanga. Veetu அருகில் tower irundha immediate ah complaint pannunga.",
+      "red_flags": [
+        "false causal link between 5G and virus spread",
+        "vague 'scientists'",
+        "incites action against infrastructure"
+      ],
+      "source_pattern_note": "Pattern based on widely documented 5G-coronavirus conspiracy hoax"
+    },
+    {
+      "id": 62,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tamil",
+      "message_text": "வெங்காயத்தை தலையணைக்கு அடியில் வைத்து தூங்கினால் சர்க்கரை நோய் (சுகர்) குணமாகிவிடும் என ஆயுர்வேத மருத்துவர் தெரிவித்துள்ளார். மாத்திரைகளை நிறுத்திவிட்டு இதை முயற்சி செய்யவும்.",
+      "red_flags": [
+        "advises stopping medication for a serious condition",
+        "folk remedy presented as verified cure",
+        "unnamed doctor"
+      ],
+      "source_pattern_note": "Pattern based on widely circulated onion/folk-remedy diabetes-cure hoax (THIP-reported influencer misinformation)"
+    },
+    {
+      "id": 63,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "English",
+      "message_text": "WARNING: Eating watermelon and drinking water together immediately causes food poisoning and has killed 3 people this week in Chennai. Please inform family members urgently.",
+      "red_flags": [
+        "false food-combination poisoning claim",
+        "unverifiable death count tied to a specific city",
+        "urges urgent sharing"
+      ],
+      "source_pattern_note": "Pattern based on classic recycled food-combination death hoax"
+    },
+    {
+      "id": 64,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tanglish",
+      "message_text": "Ice cream fridge la konjam neram vachurundha adhula bacteria grow aagi cancer varum nu WHO recent ah warning kudutha, ice cream company sonnadhu ellam poi.",
+      "red_flags": [
+        "false WHO attribution about ice cream causing cancer",
+        "discredits real companies without evidence"
+      ],
+      "source_pattern_note": "Pattern based on generic food-safety-panic hoax template attributed to WHO"
+    },
+    {
+      "id": 65,
+      "category": "Health Misinformation",
+      "label": "misinformation",
+      "language_type": "Tamil",
+      "message_text": "கொரோனா தடுப்பூசி எடுத்தவர்களுக்கு 5 வருடங்களில் பக்க விளைவுகள் தொடங்கும் என புதிய ஆராய்ச்சி தெரிவிக்கிறது. தடுப்பூசி எடுக்காதவர்கள் கவலைப்பட வேண்டாம், இதை பகிரவும்.",
+      "red_flags": [
+        "unverified vaccine side-effect claim with vague 'new research'",
+        "discourages vaccination",
+        "forward request"
+      ],
+      "source_pattern_note": "Pattern based on documented vaccine-hesitancy misinformation forwards flagged by MCA/fact-checking units"
+    },
+    {
+      "id": 66,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "Your WhatsApp number is one of 10 lucky winners of Rs.10,00,000 in the Jio 10th Anniversary Draw. Claim by sending your bank details and paying Rs.2,500 GST clearance fee.",
+      "red_flags": [
+        "telecom-anniversary draw impersonation",
+        "asks for bank details plus advance fee",
+        "unsolicited win"
+      ],
+      "source_pattern_note": "Pattern based on telecom-anniversary lucky draw scam variants"
+    },
+    {
+      "id": 67,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "Tanglish",
+      "message_text": "Ungaluku Amazon Anniversary Sale Lucky Draw la Innova Crysta car free ah kedaichirikku. Delivery, RC transfer charge 4500 rs mattum kattunga, veetuku kondu vந்து தருவோம்.",
+      "red_flags": [
+        "brand impersonation (Amazon)",
+        "implausible free-car win",
+        "upfront 'transfer charge'"
+      ],
+      "source_pattern_note": "Pattern based on fake e-commerce anniversary sale car-giveaway scam"
+    },
+    {
+      "id": 68,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "English",
+      "message_text": "GOOGLE PROMO WINNER: Your email ID has been randomly selected for the Google 25th Anniversary cash reward of $50,000. Contact our claims agent immediately with your bank IFSC code.",
+      "red_flags": [
+        "impersonates Google",
+        "classic advance-fee/419-style claim",
+        "requests bank IFSC code"
+      ],
+      "source_pattern_note": "Pattern based on long-standing Google/Microsoft lottery email-and-SMS scam template"
+    },
+    {
+      "id": 69,
+      "category": "Lottery Scam",
+      "label": "scam",
+      "language_type": "Tamil",
+      "message_text": "வாழ்த்துக்கள்! தமிழ்நாடு அரசு புத்தாண்டு லக்கி டிரா-வில் உங்கள் எண் ரூ.5,00,000 வென்றுள்ளது. பரிசை பெற ஆதார், வங்கி விவரங்களுடன் ரூ.1000 அனுப்பவும்.",
+      "red_flags": [
+        "impersonates state government scheme",
+        "requests Aadhaar and bank details plus fee",
+        "unsolicited win notice"
+      ],
+      "source_pattern_note": "Pattern based on fake-government-scheme lottery scam template"
+    },
+    {
+      "id": 70,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "English",
+      "message_text": "Your PNR 4521367890 is confirmed. Train 12658 departs Chennai Central at 22:40 on 25-Aug. Have a safe journey. - IRCTC",
+      "red_flags": [
+        "none - standard transactional travel confirmation with no request for money or OTP"
+      ],
+      "source_pattern_note": "Example of genuine IRCTC transactional message for negative class"
+    },
+    {
+      "id": 71,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tanglish",
+      "message_text": "Akka, naalaikku amma birthday, cake order pannitiya? Evening 6 mani ku veetuku vandhutu po.",
+      "red_flags": [
+        "none - ordinary family conversation"
+      ],
+      "source_pattern_note": "Everyday Tanglish message for negative class balance"
+    },
+    {
+      "id": 72,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tamil",
+      "message_text": "நாளை காலை 9 மணிக்கு PTA மீட்டிங் பள்ளியில் நடைபெறும். பெற்றோர்கள் தவறாமல் வருகை தரவும்.",
+      "red_flags": [
+        "none - genuine school PTA announcement"
+      ],
+      "source_pattern_note": "Everyday Tamil announcement for negative class balance"
+    },
+    {
+      "id": 73,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "English",
+      "message_text": "Dear Customer, Rs.2,500 has been credited to your account ending 4521 on 19-Aug-26. Available balance Rs.18,340. - Your Bank",
+      "red_flags": [
+        "none - standard bank credit alert, informational only, no action or OTP requested"
+      ],
+      "source_pattern_note": "Example of genuine bank credit-alert SMS for negative class"
+    },
+    {
+      "id": 74,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "Tanglish",
+      "message_text": "Da match ippo start aagum, TV podu, CSK batting.",
+      "red_flags": [
+        "none - casual everyday conversation"
+      ],
+      "source_pattern_note": "Everyday Tanglish message for negative class balance"
+    },
+    {
+      "id": 75,
+      "category": "Legitimate",
+      "label": "not_scam",
+      "language_type": "English",
+      "message_text": "Your appointment with Dr. Meera (Dermatology) is confirmed for 21-Aug, 11:00 AM at Apollo Clinic, Anna Nagar. Please arrive 15 minutes early.",
+      "red_flags": [
+        "none - standard genuine appointment confirmation"
+      ],
+      "source_pattern_note": "Example of genuine clinic appointment SMS for negative class"
+    }
+  ]
+}
