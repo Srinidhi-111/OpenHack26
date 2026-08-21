@@ -175,7 +175,7 @@ Each entry includes the message text, category, label (`scam` / `misinformation`
 | ML Lead | Member 1 — `[Abinaya S]` |
 | Backend | Member 2 — `[Srinidhi R]` |
 | Frontend| Member 3 — `[Dharun R]` |
-| Data Curation + Documentation/Demo Lead | Member 4 — `[Panbarasi S]` |
+| Data Curation + Documentation | Member 4 — `[Panbarasi S]` |
 
 ## License
 
