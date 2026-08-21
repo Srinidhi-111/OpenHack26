@@ -18,22 +18,25 @@ _model = SentenceTransformer("paraphrase-multilingual-MiniLM-L12-v2")
 #   an English-only model like all-MiniLM-L6-v2. Still free, Apache 2.0, local.
 
 # ---------------------------------------------------------------------------
-# 2. Seed dataset — placeholder for now, swapped later once teammate's file arrives
+# 2. Seed dataset — loaded from the real curated dataset (data team)
 # ---------------------------------------------------------------------------
-SEED_MESSAGES = [
-    "Urgent! Your bank account will be blocked. Click here immediately to verify.",
-    "Congratulations! You have won Rs 50,000. Send your OTP to claim now.",
-    "Ungal account suspend aagum, immediately இந்த link click pannunga",
-    "Dear customer your KYC is pending, update now or account will be blocked",
-    "Free recharge kedaikkum, click here to get 500 rupees cashback offer",
-    "This is IT department, pay pending tax immediately or face arrest",
-    "Your parcel is held at customs, pay Rs 199 to release, click link",
-    "Vaccine registration free ஆக இருக்கு, ungal Aadhaar number send pannunga",
-]
+_SEED_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "seed_dataset.json"
+
+def _load_seed_messages():
+    with open(_SEED_PATH, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    # Only keep scam/misinformation examples — not_scam entries are safe
+    # controls, not patterns we want to match against.
+    return [
+        m["message_text"]
+        for m in data["messages"]
+        if m.get("label") in ("scam", "misinformation")
+    ]
+
+SEED_MESSAGES = _load_seed_messages()
 
 # Precompute seed embeddings once (fast lookups later)
 _seed_embeddings = _model.encode(SEED_MESSAGES, normalize_embeddings=True)
-
 
 def _semantic_score(text: str):
     """Returns (best_similarity_score, most_similar_seed_message)."""
@@ -41,7 +44,6 @@ def _semantic_score(text: str):
     similarities = np.dot(_seed_embeddings, query_embedding.T).flatten()
     best_idx = int(np.argmax(similarities))
     return float(similarities[best_idx]), SEED_MESSAGES[best_idx]
-
 
 # ---------------------------------------------------------------------------
 # 3. Rule-based signals
