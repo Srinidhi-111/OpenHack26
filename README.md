@@ -92,8 +92,6 @@ OpenHack26/
 ├── data/
 │   └── seed_dataset.json       # 75 curated scam/misinfo/safe example messages
 ├── screenshots/                # Prototype screenshots, captured throughout the day
-├── demo/
-│   └── demo_video.mp4          # (or a link to hosted video)
 ├── [backend folder]/           #  app.py, /api
 └── [frontend folder]/          #  /frontend, index.html
 ```
@@ -140,8 +138,6 @@ Open `http://localhost:[PORT]` in your browser, paste a sample message (see `dat
 4. **Scoring: how the risk score 0-100 (or however it's scaled) is calculated]`
 5. **Output: Risk score + the exact substrings that matched known scam/misinformation patterns + a template-generated plain-language explanation.
 
-*(This section should be filled in by whoever built the detection logic — Member 4, coordinate with Member 1 to get this accurate before final submission.)*
-
 ## Dataset
 
 `data/seed_dataset.json` contains **75 hand-curated example messages** across 6 categories, in English, Tanglish, and Tamil script:
@@ -160,8 +156,6 @@ Each entry includes the message text, category, label (`scam` / `misinformation`
 **Sourcing note:** examples are reconstructed from publicly documented scam/misinformation patterns (cybercrime advisories, CERT-In/RBI/TRAI alerts, and fact-checking organizations such as BOOM Live and Check4Spam) rather than copied from any individual's private messages — realistic in phrasing while respecting privacy.
 
 ## Known Limitations
-
-*(Be upfront about these — judges respect honesty about hackathon-scope constraints more than overclaiming)*
 
 - Seed dataset covers 5 scam/misinformation categories; real-world scam patterns are far broader.
 - Currently scoped to Tamil-English code-mixing; not tested on other regional language pairs.
