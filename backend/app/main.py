@@ -1,6 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from app.models import MessageInput, AnalysisResult
+from app.detection import analyze_message
 
 app = FastAPI(title="Meiyaa API")
 
@@ -24,9 +25,5 @@ def analyze(input: MessageInput):
     if len(text) > 2000:
         raise HTTPException(status_code=400, detail="Message too long (max 2000 characters).")
 
-    # --- STUB: replace this once Member 1's detection.py is ready ---
-    return AnalysisResult(
-        risk_score=0.5,
-        flagged_phrases=["urgent", "click here"],
-        explanation="This is a placeholder response for frontend testing."
-    )
+    result = analyze_message(text)
+    return AnalysisResult(**result)
